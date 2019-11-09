@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSalute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="2"
+        android:background="@color/main_salute_background"
+        android:fontFamily="monospace"
+
+        android:padding="16dp"
+        android:text="@string/main_salute_label"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!-- comets   android:onClick="toSecond" -->
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="toSecond"
+        android:text="Hello World!" />
+
+</LinearLayout>
